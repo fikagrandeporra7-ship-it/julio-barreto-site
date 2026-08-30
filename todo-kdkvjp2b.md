@@ -1,10 +1,7 @@
-# Verificação — edição visual da página inicial
+# Alteração — botão e etiqueta do hero
 
-- [x] Confirmar no código os três textos removidos.
-- [x] Verificar se não ficaram elementos vazios ou referências obsoletas.
-- [x] Validar TypeScript e renderização da página.
-- [x] Salvar novo checkpoint e entregar a versão.
-
-## Achados
-
-A renderização confirmou que o hero permanece com “Brasília Além da Divisa”, sem o parágrafo, o selo de confirmação ou o rótulo secundário vazios. A faixa de relatório continua removida e não há referências obsoletas no pacote HostGator. A build e o TypeScript foram aprovados.
+- [ ] Localizar o botão “Conheça a atuação” e a etiqueta “TRABALHO QUE SE VÊ”.
+- [ ] Alterar o botão para “Conheça o Projeto”.
+- [ ] Remover completamente a etiqueta amarela do hero.
+- [ ] Limpar estilos obsoletos e validar a página e a build HostGator.
+- [ ] Salvar checkpoint e entregar a versão atualizada.

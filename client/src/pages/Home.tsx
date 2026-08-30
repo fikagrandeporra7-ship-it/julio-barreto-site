@@ -213,7 +213,7 @@ export default function Home() {
               <h1>Brasília Além da <em>Divisa.</em></h1>
               <div className="hero-actions">
                 <ScrollLink href="#atuacao" className="button button-primary">
-                  Conheça a atuação <ArrowUpRight size={18} />
+                  Conheça o Projeto <ArrowUpRight size={18} />
                 </ScrollLink>
                 <ScrollLink href="#agenda" className="text-link text-link-dark">
                   Acompanhe o mandato <ChevronRight size={18} />
@@ -225,7 +225,6 @@ export default function Home() {
                 <img src={heroImage} alt="Júlio Barreto em Brasília" />
                 <div className="hero-image-caption"><span>Brasília, DF</span></div>
               </div>
-              <div className="hero-stamp"><img src={markImage} alt="" aria-hidden="true" /><span>TRABALHO<br />QUE SE VÊ</span></div>
             </div>
           </div>
           <div className="hero-bottom-line" aria-hidden="true"><span /><span /><span /></div>
