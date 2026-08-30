@@ -215,9 +215,6 @@ export default function Home() {
                 <ScrollLink href="#atuacao" className="button button-primary">
                   Conheça o Projeto <ArrowUpRight size={18} />
                 </ScrollLink>
-                <ScrollLink href="#agenda" className="text-link text-link-dark">
-                  Acompanhe o mandato <ChevronRight size={18} />
-                </ScrollLink>
               </div>
             </div>
             <div className="hero-visual">
@@ -236,10 +233,9 @@ export default function Home() {
             <div className="about-visual-wrap">
               <div className="about-image-main"><img src={parliamentImage} alt="Júlio Barreto ouvindo representantes da comunidade" /></div>
               <div className="about-image-small"><img src={communityImage} alt="Júlio Barreto conversando com trabalhadores" /></div>
-              <div className="about-note"><span>01</span><strong>O mandato começa<br />por ouvir.</strong></div>
             </div>
             <div className="about-copy">
-              <SectionKicker>Atuação</SectionKicker>
+              <SectionKicker>Projeto</SectionKicker>
               <h2>Um gabinete aberto para quem faz o Brasil acontecer.</h2>
               <p className="lead-paragraph">Júlio Barreto leva para Brasília a experiência de quem conhece o país de perto. O trabalho começa na escuta, passa pela construção de soluções e termina na prestação de contas.</p>
               <p>Cada pauta precisa responder a uma pergunta simples: como isso melhora a vida de quem trabalha, empreende, cuida da família e espera um serviço público que funcione?</p>
@@ -314,8 +310,8 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="container footer-top"><div className="footer-brand"><img src={logoUrl} alt="Logo Júlio Barreto" /><p>Brasília Além da Divisa</p></div><div className="footer-links"><div><span className="footer-heading">Navegue</span>{navItems.slice(0, 4).map((item) => <ScrollLink key={item.href} href={item.href}>{item.label}</ScrollLink>)}</div><div><span className="footer-heading">Siga o mandato</span><div className="social-links"><button aria-label="Instagram" onClick={() => placeholderAction("Instagram")}><Instagram size={18} /></button><button aria-label="Facebook" onClick={() => placeholderAction("Facebook")}><Facebook size={18} /></button><button aria-label="YouTube" onClick={() => placeholderAction("YouTube")}><Youtube size={18} /></button><button aria-label="LinkedIn" onClick={() => placeholderAction("LinkedIn")}><Linkedin size={18} /></button></div></div></div></div>
-        <div className="container footer-bottom"><span>© 2026 Júlio Barreto. Conteúdo demonstrativo para validação do layout.</span><div><a href="#contato">Privacidade</a><a href="#contato">Transparência</a><a href="#topo" className="back-to-top">Voltar ao topo <ArrowDown size={14} /></a></div></div>
+        <div className="container footer-top"><div className="footer-brand"><img src={logoUrl} alt="Logo Júlio Barreto" /><p>Brasília Além da Divisa</p></div><div className="footer-links"><div><span className="footer-heading">Navegue</span>{navItems.slice(0, 4).map((item) => <ScrollLink key={item.href} href={item.href}>{item.label}</ScrollLink>)}</div><div><span className="footer-heading">Siga o Projeto</span><div className="social-links"><button aria-label="Instagram" onClick={() => placeholderAction("Instagram")}><Instagram size={18} /></button><button aria-label="Facebook" onClick={() => placeholderAction("Facebook")}><Facebook size={18} /></button><button aria-label="YouTube" onClick={() => placeholderAction("YouTube")}><Youtube size={18} /></button><button aria-label="LinkedIn" onClick={() => placeholderAction("LinkedIn")}><Linkedin size={18} /></button></div></div></div></div>
+        <div className="container footer-bottom"><span>© 2026 Júlio Barreto</span><div><a href="#contato">Privacidade</a><a href="#contato">Transparência</a><a href="#topo" className="back-to-top">Voltar ao topo <ArrowDown size={14} /></a></div></div>
       </footer>
     </div>
   );

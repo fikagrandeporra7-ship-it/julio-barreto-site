@@ -1,7 +1,6 @@
-# Alteração — botão e etiqueta do hero
+# Verificação — edição visual da página inicial
 
-- [ ] Localizar o botão “Conheça a atuação” e a etiqueta “TRABALHO QUE SE VÊ”.
-- [ ] Alterar o botão para “Conheça o Projeto”.
-- [ ] Remover completamente a etiqueta amarela do hero.
-- [ ] Limpar estilos obsoletos e validar a página e a build HostGator.
-- [ ] Salvar checkpoint e entregar a versão atualizada.
+- [ ] Revisar os textos e estilos alterados.
+- [ ] Remover elementos vazios ou estilos residuais.
+- [ ] Validar TypeScript, renderização e build HostGator.
+- [ ] Salvar novo checkpoint e entregar a versão.
