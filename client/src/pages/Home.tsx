@@ -4,7 +4,6 @@ import {
   ArrowDown,
   ArrowUpRight,
   CalendarDays,
-  Check,
   ChevronRight,
   Clock3,
   GraduationCap,
@@ -212,7 +211,6 @@ export default function Home() {
             <div className="hero-copy">
               <SectionKicker>Deputado federal</SectionKicker>
               <h1>Brasília Além da <em>Divisa.</em></h1>
-              <p className="hero-lede">Um mandato próximo, firme e transparente para transformar as necessidades do Brasil real em decisões que fazem diferença.</p>
               <div className="hero-actions">
                 <ScrollLink href="#atuacao" className="button button-primary">
                   Conheça a atuação <ArrowUpRight size={18} />
@@ -221,15 +219,11 @@ export default function Home() {
                   Acompanhe o mandato <ChevronRight size={18} />
                 </ScrollLink>
               </div>
-              <div className="hero-proof">
-                <span className="proof-mark"><Check size={14} /></span>
-                <span>Escuta ativa. Trabalho constante. Prestação de contas.</span>
-              </div>
             </div>
             <div className="hero-visual">
               <div className="hero-image-frame">
                 <img src={heroImage} alt="Júlio Barreto em Brasília" />
-                <div className="hero-image-caption"><span>Brasília, DF</span><span>Mandato presente</span></div>
+                <div className="hero-image-caption"><span>Brasília, DF</span></div>
               </div>
               <div className="hero-stamp"><img src={markImage} alt="" aria-hidden="true" /><span>TRABALHO<br />QUE SE VÊ</span></div>
             </div>

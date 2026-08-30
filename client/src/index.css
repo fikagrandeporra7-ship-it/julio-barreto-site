@@ -103,7 +103,7 @@ h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { font-family: "DM Sans", sans-serif; letter-spacing: -.05em; }
 h1 em, h2 em { color: var(--green); font-style: normal; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 11px; min-height: 50px; padding: 0 22px; font-size: 12px; font-weight: 900; letter-spacing: .02em; transition: transform 160ms var(--ease-out), background-color 160ms var(--ease-out), color 160ms var(--ease-out), box-shadow 160ms var(--ease-out); }
-.button:active, .header-cta:active, .document-action:active, .participate-card:active { transform: scale(.97); }
+.button:active, .header-cta:active, .participate-card:active { transform: scale(.97); }
 .button-primary { background: var(--green); color: #fff; box-shadow: 0 11px 22px rgba(0,126,98,.16); }
 .button-primary:hover { background: var(--navy); box-shadow: 0 14px 25px rgba(23,58,69,.19); transform: translateY(-2px); }
 .text-link { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 900; transition: gap 180ms var(--ease-out), color 180ms ease; }

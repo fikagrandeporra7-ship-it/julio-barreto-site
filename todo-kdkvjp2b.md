@@ -1,7 +1,10 @@
-# Tarefas desta sessão — frase e relatório
+# Verificação — edição visual da página inicial
 
-- [ ] Localizar todas as ocorrências de “Presença que vira trabalho”.
-- [ ] Substituir a frase por “Brasília Além da Divisa”.
-- [ ] Remover a faixa/seção de relatório do mandato.
-- [ ] Ajustar espaçamentos e validar o pacote HostGator.
-- [ ] Salvar checkpoint e entregar a versão atualizada.
+- [x] Confirmar no código os três textos removidos.
+- [x] Verificar se não ficaram elementos vazios ou referências obsoletas.
+- [x] Validar TypeScript e renderização da página.
+- [x] Salvar novo checkpoint e entregar a versão.
+
+## Achados
+
+A renderização confirmou que o hero permanece com “Brasília Além da Divisa”, sem o parágrafo, o selo de confirmação ou o rótulo secundário vazios. A faixa de relatório continua removida e não há referências obsoletas no pacote HostGator. A build e o TypeScript foram aprovados.
