@@ -10,6 +10,7 @@ const assetDir = path.join(packageDir, "assets");
 
 const assets = [
   "julio-logo_54e754fb.webp",
+  "numero-406.webp",
   "julio-hero-brasilia_4d400003.jpg",
   "julio-parliament_1c7e8352.jpg",
   "julio-community_9ee5f3bd.jpg",
@@ -19,6 +20,15 @@ const assets = [
 if (!fs.existsSync(sourceDir)) {
   throw new Error(`A pasta ${sourceDir} não existe. Execute o Vite antes do empacotamento.`);
 }
+
+const assetAliases = {
+  "julio-logo_54e754fb.webp": "julio-logo_54e754fb.webp",
+  "numero-406_e5375f9c.webp": "numero-406.webp",
+  "julio-hero-brasilia_4d400003.jpg": "julio-hero-brasilia_4d400003.jpg",
+  "julio-parliament_1c7e8352.jpg": "julio-parliament_1c7e8352.jpg",
+  "julio-community_9ee5f3bd.jpg": "julio-community_9ee5f3bd.jpg",
+  "julio-mark_b168c756.png": "julio-mark_b168c756.png",
+};
 
 for (const asset of assets) {
   const sourceAsset = path.join(assetSourceDir, asset);
@@ -47,8 +57,8 @@ function listFiles(dir) {
 const replaceableFiles = listFiles(packageDir).filter((file) => /\.(html|css|js)$/.test(file));
 for (const file of replaceableFiles) {
   let content = fs.readFileSync(file, "utf8");
-  for (const asset of assets) {
-    content = content.replaceAll(`/manus-storage/${asset}`, `/assets/${asset}`);
+  for (const [storageAsset, localAsset] of Object.entries(assetAliases)) {
+    content = content.replaceAll(`/manus-storage/${storageAsset}`, `/assets/${localAsset}`);
   }
   content = content.replace(/\s*<script[^>]+src="https:\/\/manus-analytics\.com\/umami"[^>]*><\/script>/g, "");
   content = content.replace(/<script\b[^>]*\bumami\b[^>]*><\/script>/g, "");
