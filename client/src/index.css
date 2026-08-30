@@ -272,8 +272,8 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 /* Footer */
 .site-footer { background: var(--navy-deep); color: var(--paper); }
 .footer-top { display: flex; justify-content: space-between; gap: 50px; padding-top: 65px; padding-bottom: 62px; }
-.footer-brand img { width: 180px; filter: brightness(0) invert(1); opacity: .92; }
-.footer-brand p { margin-top: 17px; color: rgba(247,242,232,.54); font-family: "DM Sans", sans-serif; font-size: 15px; font-weight: 700; }
+.footer-brand img { width: 180px; height: auto; opacity: .98; filter: drop-shadow(0 3px 5px rgba(0,0,0,.16)); }
+.footer-brand p { margin-top: 17px; color: var(--yellow); font-family: "DM Sans", sans-serif; font-size: 15px; font-weight: 700; letter-spacing: -.02em; }
 .footer-links { display: flex; gap: 105px; }
 .footer-links > div { display: flex; flex-direction: column; gap: 12px; min-width: 100px; }
 .footer-heading { margin-bottom: 7px; color: var(--yellow); font-size: 9px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
