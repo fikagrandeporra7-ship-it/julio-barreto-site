@@ -1,6 +1,6 @@
-# Verificação — edição visual da página inicial
+# Verificação — alvo “Atuação”
 
-- [ ] Revisar os textos e estilos alterados.
-- [ ] Remover elementos vazios ou estilos residuais.
-- [ ] Validar TypeScript, renderização e build HostGator.
-- [ ] Salvar novo checkpoint e entregar a versão.
+- [ ] Inspecionar as ocorrências atuais de “Atuação” e “Projeto”.
+- [ ] Confirmar se o alvo já está correto ou corrigir manualmente.
+- [ ] Validar a renderização e criar novo checkpoint.
+- [ ] Entregar o resultado da verificação.

@@ -33,7 +33,7 @@ const communityImage = "/manus-storage/julio-community_9ee5f3bd.jpg";
 const markImage = "/manus-storage/julio-mark_b168c756.png";
 
 const navItems = [
-  { label: "Atuação", href: "#atuacao" },
+  { label: "Projeto", href: "#atuacao" },
   { label: "Agenda", href: "#agenda" },
   { label: "Resultados", href: "#resultados" },
   { label: "Trajetória", href: "#trajetoria" },
