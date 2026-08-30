@@ -3,12 +3,10 @@ import { useEffect, useState } from "react";
 import {
   ArrowDown,
   ArrowUpRight,
-  BookOpen,
   CalendarDays,
   Check,
   ChevronRight,
   Clock3,
-  Download,
   GraduationCap,
   Facebook,
   Handshake,
@@ -213,7 +211,7 @@ export default function Home() {
           <div className="hero-content container">
             <div className="hero-copy">
               <SectionKicker>Deputado federal</SectionKicker>
-              <h1>Presença que vira <em>trabalho.</em></h1>
+              <h1>Brasília Além da <em>Divisa.</em></h1>
               <p className="hero-lede">Um mandato próximo, firme e transparente para transformar as necessidades do Brasil real em decisões que fazem diferença.</p>
               <div className="hero-actions">
                 <ScrollLink href="#atuacao" className="button button-primary">
@@ -239,15 +237,6 @@ export default function Home() {
           <div className="hero-bottom-line" aria-hidden="true"><span /><span /><span /></div>
         </section>
 
-        <section className="document-strip" aria-label="Acesso rápido ao relatório">
-          <div className="container document-strip-inner">
-            <div className="document-label"><BookOpen size={17} /><span>Transparência em primeiro lugar</span></div>
-            <div className="document-title">Conheça o <strong>relatório do mandato</strong></div>
-            <button className="document-action" onClick={() => placeholderAction("Relatório do mandato")}>
-              Baixar relatório <Download size={16} />
-            </button>
-          </div>
-        </section>
 
         <section id="atuacao" className="about-section section-pad">
           <div className="container about-grid">
