@@ -6,20 +6,14 @@ import {
   CalendarDays,
   ChevronRight,
   Clock3,
-  GraduationCap,
   Facebook,
-  Handshake,
   Instagram,
-  Landmark,
   Linkedin,
   Mail,
   MapPin,
   Menu,
   MessageCircle,
-  Scale,
-  ShieldCheck,
   Users,
-  Wheat,
   X,
   Youtube,
 } from "lucide-react";
@@ -30,13 +24,10 @@ const number406Url = "/manus-storage/numero-406_e5375f9c.webp";
 const heroImage = "/manus-storage/julio-hero-brasilia_4d400003.jpg";
 const parliamentImage = "/manus-storage/julio-parliament_1c7e8352.jpg";
 const communityImage = "/manus-storage/julio-community_9ee5f3bd.jpg";
-const markImage = "/manus-storage/julio-mark_b168c756.png";
 
 const navItems = [
   { label: "Projeto", href: "#atuacao" },
   { label: "Agenda", href: "#agenda" },
-  { label: "Resultados", href: "#resultados" },
-  { label: "Trajetória", href: "#trajetoria" },
   { label: "Participe", href: "#participe" },
 ];
 
@@ -64,69 +55,6 @@ const agenda = [
     title: "Encontro aberto com a comunidade",
     location: "Anápolis — GO",
     type: "Mandato presente",
-  },
-];
-
-const fronts = [
-  {
-    icon: ShieldCheck,
-    number: "01",
-    title: "Segurança e cidadania",
-    text: "Defesa de políticas que devolvem tranquilidade às famílias e valorizam quem protege a população.",
-    color: "green",
-  },
-  {
-    icon: Wheat,
-    number: "02",
-    title: "Campo que produz",
-    text: "Mais segurança jurídica, crédito e infraestrutura para quem trabalha e movimenta a economia.",
-    color: "yellow",
-  },
-  {
-    icon: Landmark,
-    number: "03",
-    title: "Gestão responsável",
-    text: "Recursos públicos bem cuidados, prioridades claras e transparência para cada decisão.",
-    color: "coral",
-  },
-  {
-    icon: GraduationCap,
-    number: "04",
-    title: "Educação que abre caminhos",
-    text: "Apoio à aprendizagem, à formação profissional e às oportunidades para a próxima geração.",
-    color: "blue",
-  },
-  {
-    icon: Handshake,
-    number: "05",
-    title: "Saúde mais próxima",
-    text: "Trabalho para aproximar atendimento, prevenção e dignidade de quem mais precisa.",
-    color: "green",
-  },
-  {
-    icon: Scale,
-    number: "06",
-    title: "Liberdade para empreender",
-    text: "Menos burocracia e mais confiança para quem cria negócios, empregos e soluções locais.",
-    color: "yellow",
-  },
-];
-
-const timeline = [
-  {
-    year: "Antes do mandato",
-    title: "A experiência começa no território",
-    text: "A escuta de famílias, produtores, empreendedores e trabalhadores forma a base de cada pauta.",
-  },
-  {
-    year: "Primeiro ciclo",
-    title: "Presença no Congresso",
-    text: "A atuação parlamentar transforma demandas reais em projetos, emendas e fiscalização do poder público.",
-  },
-  {
-    year: "Agora",
-    title: "Um mandato que presta contas",
-    text: "Resultados precisam ser acompanhados de perto: o cidadão sabe o que foi feito, por quê e qual é o próximo passo.",
   },
 ];
 
@@ -265,30 +193,6 @@ export default function Home() {
               ))}
             </div>
             <div className="agenda-footnote"><span className="live-dot" /> Agenda ilustrativa — atualize com os compromissos oficiais do mandato.</div>
-          </div>
-        </section>
-
-        <section id="resultados" className="results-section section-pad">
-          <div className="container">
-            <div className="results-header">
-              <div><SectionKicker>Frentes de trabalho</SectionKicker><h2>Diagnóstico claro.<br /><em>Ação de verdade.</em></h2></div>
-              <p>O mandato se organiza em prioridades que atravessam a vida de quem vive nas cidades e no campo. Sem promessa vazia: com acompanhamento, cobrança e entrega.</p>
-            </div>
-            <div className="results-grid">
-              {fronts.map((front) => {
-                const Icon = front.icon;
-                return <article className={`result-card result-card-${front.color}`} key={front.number}><div className="result-top"><span className="result-number">{front.number}</span><Icon size={28} strokeWidth={1.5} /></div><h3>{front.title}</h3><p>{front.text}</p><span className="result-arrow"><ArrowUpRight size={18} /></span></article>;
-              })}
-            </div>
-          </div>
-        </section>
-
-        <section id="trajetoria" className="trajectory-section section-pad">
-          <div className="container trajectory-grid">
-            <div className="trajectory-heading"><SectionKicker>Trajetória</SectionKicker><h2>Uma vida em movimento,<br /><em>um mandato com direção.</em></h2><p>Experiência não é ponto de chegada. É o que permite seguir avançando com os pés no chão.</p><div className="trajectory-mark"><img src={markImage} alt="" aria-hidden="true" /></div></div>
-            <div className="timeline">
-              {timeline.map((item, index) => <article className="timeline-item" key={item.year}><div className="timeline-marker"><span>{String(index + 1).padStart(2, "0")}</span></div><div className="timeline-content"><span className="timeline-year">{item.year}</span><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
-            </div>
           </div>
         </section>
 

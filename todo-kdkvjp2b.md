@@ -1,6 +1,7 @@
-# Verificação — alvo “Atuação”
+# Alteração — remover Trajetória e Resultados
 
-- [ ] Inspecionar as ocorrências atuais de “Atuação” e “Projeto”.
-- [ ] Confirmar se o alvo já está correto ou corrigir manualmente.
-- [ ] Validar a renderização e criar novo checkpoint.
-- [ ] Entregar o resultado da verificação.
+- [ ] Localizar os itens de navegação e as seções “Trajetória” e “Resultados”.
+- [ ] Remover os dois itens da navegação.
+- [ ] Remover as duas seções e limpar dados/imports usados somente por elas.
+- [ ] Validar o layout, TypeScript e build HostGator.
+- [ ] Salvar checkpoint e entregar a versão atualizada.
