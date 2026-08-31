@@ -1,6 +1,7 @@
-# Correção — chaves duplicadas da navegação
+# Inserção — Pré-Projeto integral
 
-- [ ] Localizar todos os mapas que usam `item.href` como chave.
-- [ ] Garantir chaves únicas sem alterar os destinos da navegação.
-- [ ] Validar o console, TypeScript e build HostGator.
-- [ ] Salvar checkpoint e entregar a correção.
+- [ ] Ler o arquivo completo e preservar o texto original.
+- [ ] Inserir o conteúdo imediatamente abaixo do título solicitado.
+- [ ] Ajustar apenas a apresentação visual, sem alterar palavras ou informações.
+- [ ] Validar fidelidade, responsividade e build HostGator.
+- [ ] Salvar checkpoint e entregar a nova versão.

@@ -144,6 +144,7 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .about-copy { max-width: 595px; padding-bottom: 18px; }
 .about-copy h2, .participate-copy h2 { color: var(--navy); font-size: clamp(37px, 4.7vw, 64px); line-height: .98; font-weight: 900; }
 .about-copy h2 { max-width: 560px; }
+.preproject-text { max-width: 100%; margin: 34px 0 0; padding: 26px 0 0; border-top: 1px solid var(--line); color: #617278; font-family: "Manrope", sans-serif; font-size: 13px; line-height: 1.72; white-space: pre-wrap; overflow-wrap: anywhere; }
 .about-signature { display: flex; align-items: center; gap: 16px; margin-top: 42px; font-family: "DM Sans", sans-serif; font-size: 16px; font-weight: 800; line-height: 1.05; }
 .signature-line { width: 44px; height: 3px; background: var(--coral); }
 .about-signature small { color: var(--muted-foreground); font-family: "Manrope", sans-serif; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -256,6 +257,7 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
   .about-grid { grid-template-columns: 1fr; gap: 58px; }
   .about-visual-wrap { min-height: 460px; }
   .about-copy h2, .participate-copy h2 { font-size: clamp(40px, 12vw, 58px); }
+  .preproject-text { margin-top: 28px; padding-top: 22px; font-size: 11px; line-height: 1.65; }
   .agenda-header, .participate-inner { grid-template-columns: 1fr; gap: 32px; }
   .agenda-header h2 { font-size: clamp(45px, 13vw, 68px); }
   .agenda-list { margin-top: 48px; }

@@ -15,6 +15,7 @@ import {
   Youtube,
 } from "lucide-react";
 import { toast } from "sonner";
+import preProjectText from "../content/preproject-ride.txt?raw";
 
 const logoUrl = "/manus-storage/julio-logo_54e754fb.webp";
 const number406Url = "/manus-storage/numero-406_e5375f9c.webp";
@@ -163,6 +164,7 @@ export default function Home() {
             <div className="about-copy">
               <SectionKicker>Pré-Projeto</SectionKicker>
               <h2 style={{fontSize: '34px'}}>Novo marco com planejamento, gestão e autonomia administrativa</h2>
+              <pre className="preproject-text">{preProjectText}</pre>
               <div className="about-signature"><span className="signature-line" /><span>Júlio Barreto<br /><small>Deputado federal</small></span></div>
             </div>
           </div>
