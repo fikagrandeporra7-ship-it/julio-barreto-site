@@ -142,10 +142,8 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .about-image-small { position: absolute; right: 0; bottom: 0; width: 47%; height: 45%; overflow: hidden; border: 11px solid var(--paper-light); background: var(--yellow-soft); }
 .about-image-small img { width: 100%; height: 100%; object-fit: cover; }
 .about-copy { max-width: 595px; padding-bottom: 18px; }
-.about-copy h2, .participate-copy h2, .contact-grid h2 { color: var(--navy); font-size: clamp(37px, 4.7vw, 64px); line-height: .98; font-weight: 900; }
+.about-copy h2, .participate-copy h2 { color: var(--navy); font-size: clamp(37px, 4.7vw, 64px); line-height: .98; font-weight: 900; }
 .about-copy h2 { max-width: 560px; }
-.lead-paragraph { margin-top: 30px; color: var(--navy); font-size: 19px; font-weight: 700; line-height: 1.52; }
-.about-copy > p:not(.lead-paragraph) { max-width: 500px; margin-top: 21px; color: #617278; font-size: 15px; line-height: 1.75; }
 .about-signature { display: flex; align-items: center; gap: 16px; margin-top: 42px; font-family: "DM Sans", sans-serif; font-size: 16px; font-weight: 800; line-height: 1.05; }
 .signature-line { width: 44px; height: 3px; background: var(--coral); }
 .about-signature small { color: var(--muted-foreground); font-family: "Manrope", sans-serif; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -255,10 +253,9 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
   .hero-visual { width: calc(100% - 26px); max-width: none; margin: 25px 0 0 auto; }
   .hero-image-frame { aspect-ratio: 1 / 1.05; box-shadow: 10px 12px 0 rgba(0,126,98,.13); }
   .section-pad { padding: 78px 0; }
-  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 58px; }
+  .about-grid { grid-template-columns: 1fr; gap: 58px; }
   .about-visual-wrap { min-height: 460px; }
-  .about-copy h2, .participate-copy h2, .contact-grid h2 { font-size: clamp(40px, 12vw, 58px); }
-  .lead-paragraph { font-size: 17px; }
+  .about-copy h2, .participate-copy h2 { font-size: clamp(40px, 12vw, 58px); }
   .agenda-header, .participate-inner { grid-template-columns: 1fr; gap: 32px; }
   .agenda-header h2 { font-size: clamp(45px, 13vw, 68px); }
   .agenda-list { margin-top: 48px; }

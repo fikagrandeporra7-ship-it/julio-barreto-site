@@ -1,3 +1,3 @@
-# Verificação visual — título do Projeto
+# Verificação visual — limpeza dos parágrafos
 
-O marcador da seção aparece como “PRÉ-PROJETO” e o título atualizado “Novo marco com planejamento, gestão e autonomia administrativa” permanece legível em desktop e celular. O tamanho reduzido melhora o encaixe no bloco sem alterar o fluxo das demais seções.
+Os dois parágrafos vazios foram removidos por completo. Em desktop e celular, a seção Pré-Projeto mantém o título, o marcador e a assinatura sem espaço em branco residual; a transição para Agenda permanece equilibrada.
