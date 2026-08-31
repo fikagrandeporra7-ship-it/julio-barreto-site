@@ -18,6 +18,7 @@ import {
   Youtube,
 } from "lucide-react";
 import { toast } from "sonner";
+import rideContent from "@/content/ride-content.txt?raw";
 
 const logoUrl = "/manus-storage/julio-logo_54e754fb.webp";
 const number406Url = "/manus-storage/numero-406_e5375f9c.webp";
@@ -58,29 +59,8 @@ const agenda = [
   },
 ];
 
-const rideTimeline = [
-  { period: "1956–1970", title: "Construção e ocupação inicial", text: "A implantação da capital no Planalto Central atraiu trabalhadores de todo o país e impulsionou o surgimento das primeiras cidades-satélites." },
-  { period: "1970–1998", title: "Expansão e conurbação", text: "O crescimento urbano e as restrições no Plano Piloto intensificaram a integração econômica e social entre Brasília e os municípios do Entorno." },
-  { period: "1998 até hoje", title: "Institucionalização e cooperação", text: "A criação da RIDE-DF formalizou a necessidade de planejar em conjunto transporte, saúde, educação, segurança e saneamento." },
-];
-
-const rideGovernance = [
-  { title: "Base constitucional", text: "Os artigos 21, IX, e 43 da Constituição Federal de 1988 fundamentam a atuação da União em planos regionais e regiões integradas de desenvolvimento." },
-  { title: "Lei Complementar nº 94/1998", text: "Criou a RIDE-DF e estabeleceu a integração administrativa entre União, Distrito Federal, Goiás e Minas Gerais, com políticas públicas de interesse comum." },
-  { title: "Lei Complementar nº 163/2018", text: "Atualizou a composição da RIDE, reforçou a cooperação federativa e ampliou os instrumentos de planejamento e gestão regional." },
-  { title: "Governança compartilhada", text: "MIDR, SUDECO, AMAB, governos estaduais e prefeituras participam da articulação institucional do desenvolvimento regional." },
-];
-
-const rideAxes = [
-  { number: "01", title: "Integração territorial", text: "Transporte público regional, bilhete único, corredores estruturantes e planejamento conjunto de mobilidade." },
-  { number: "02", title: "Oportunidades no Entorno", text: "Descentralização de empregos e serviços, polos econômicos, investimentos e fortalecimento das cadeias produtivas." },
-  { number: "03", title: "Governança e financiamento", text: "Mecanismos permanentes de cooperação, fundo regional e planejamento de longo prazo entre os entes federados." },
-];
-
-const rideMunicipalities = {
-  goias: "Abadiânia, Água Fria de Goiás, Águas Lindas de Goiás, Alexânia, Cidade Ocidental, Cocalzinho de Goiás, Corumbá de Goiás, Cristalina, Formosa, Luziânia, Mimoso de Goiás, Novo Gama, Padre Bernardo, Pirenópolis, Planaltina de Goiás, Santo Antônio do Descoberto, Valparaíso de Goiás e Vila Boa.",
-  minasGerais: "Arinos, Buritis, Cabeceira Grande e Unaí.",
-};
+const rideBlocks = rideContent.split(/\r?\n\s*\r?\n/).filter((block) => block.trim().length > 0);
+const isRideHeading = (block: string) => !block.includes("\n") && !/[.!?]$/.test(block.trim());
 
 function SectionKicker({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (
@@ -196,58 +176,13 @@ export default function Home() {
           </div>
 
           <div className="container ride-story" aria-labelledby="ride-title">
-            <div className="ride-story-intro">
-              <SectionKicker>Brasília e o Entorno</SectionKicker>
-              <h3 id="ride-title">A história da capital também é a história da sua região.</h3>
-              <p>A RIDE-DF traduz a conexão cotidiana entre Brasília, o Distrito Federal e os municípios do Entorno. Conhecer essa trajetória ajuda a entender por que mobilidade, serviços públicos e desenvolvimento precisam ser planejados em conjunto.</p>
-            </div>
-
-            <div className="ride-timeline" aria-label="Linha do tempo da RIDE-DF">
-              {rideTimeline.map((item) => (
-                <article className="ride-timeline-item" key={item.period}>
-                  <span className="ride-period">{item.period}</span>
-                  <div><h4>{item.title}</h4><p>{item.text}</p></div>
-                </article>
-              ))}
-            </div>
-
-            <div className="ride-details-grid">
-              <div className="ride-panel ride-governance">
-                <SectionKicker>Como se organiza</SectionKicker>
-                <h3>Uma responsabilidade compartilhada.</h3>
-                <div className="ride-governance-list">
-                  {rideGovernance.map((item, index) => (
-                    <article key={item.title} className="ride-governance-item">
-                      <span>0{index + 1}</span><div><h4>{item.title}</h4><p>{item.text}</p></div>
-                    </article>
-                  ))}
-                </div>
-              </div>
-
-              <div className="ride-panel ride-region">
-                <SectionKicker>Território</SectionKicker>
-                <h3>Uma região que precisa ser vista em conjunto.</h3>
-                <p>A RIDE-DF é formada pelo Distrito Federal e por municípios de Goiás e Minas Gerais com forte integração econômica, social e urbana com Brasília.</p>
-                <div className="ride-accordions">
-                  <details open><summary>Distrito Federal</summary><p>Brasília e suas regiões administrativas.</p></details>
-                  <details><summary>Municípios de Goiás</summary><p>{rideMunicipalities.goias}</p></details>
-                  <details><summary>Municípios de Minas Gerais</summary><p>{rideMunicipalities.minasGerais}</p></details>
-                </div>
-              </div>
-            </div>
-
-            <div className="ride-pact">
-              <div className="ride-pact-heading">
-                <SectionKicker>Pacto Nacional da Capital</SectionKicker>
-                <h3>Integração que transforma proximidade em oportunidade.</h3>
-                <p>Os desafios contemporâneos da região pedem cooperação permanente. O pacto propõe uma agenda comum para desenvolvimento, governança e justiça territorial.</p>
-              </div>
-              <div className="ride-axis-grid">
-                {rideAxes.map((axis) => (
-                  <article className="ride-axis" key={axis.number}><span>{axis.number}</span><h4>{axis.title}</h4><p>{axis.text}</p></article>
-                ))}
-              </div>
-            </div>
+            <article className="ride-raw-content">
+              {rideBlocks.map((block, index) => {
+                const heading = isRideHeading(block);
+                const className = index === 0 ? "ride-raw-title" : heading ? "ride-raw-heading" : "ride-raw-paragraph";
+                return <div className={className} key={`${index}-${block.slice(0, 24)}`}>{block}</div>;
+              })}
+            </article>
           </div>
         </section>
 
