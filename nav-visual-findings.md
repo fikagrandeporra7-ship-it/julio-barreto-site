@@ -1,3 +1,3 @@
-# Verificação visual — remoção do contato
+# Verificação visual — item Início
 
-A seção de contato foi removida do fluxo da página. Em desktop e celular, Participe segue diretamente para o rodapé, sem faixa vazia ou quebra visual. O rodapé mantém a navegação Projeto, Agenda e Sobre, além do retorno ao topo.
+A opção “Início” aparece como primeiro item na navbar desktop e é incluída automaticamente no menu mobile pela fonte compartilhada de navegação. O link aponta para o topo da página e não alterou o enquadramento do cabeçalho.

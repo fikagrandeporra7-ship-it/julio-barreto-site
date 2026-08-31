@@ -1,7 +1,6 @@
-# Alteração — foto do hero
+# Alteração — item Início na navbar
 
-- [ ] Copiar e publicar a imagem enviada como ativo do site.
-- [ ] Substituir a foto atual do hero.
-- [ ] Ajustar o enquadramento para desktop e celular.
-- [ ] Validar TypeScript, build HostGator e renderização.
-- [ ] Salvar checkpoint e entregar a versão atualizada.
+- [ ] Confirmar a fonte compartilhada da navegação desktop e mobile.
+- [ ] Adicionar “Início” como primeiro item apontando para o topo.
+- [ ] Validar a ordem visual em desktop e mobile.
+- [ ] Regenerar a build HostGator e salvar checkpoint.

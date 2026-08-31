@@ -23,6 +23,7 @@ const parliamentImage = "/manus-storage/julio-parliament_1c7e8352.jpg";
 const communityImage = "/manus-storage/julio-community_9ee5f3bd.jpg";
 
 const navItems = [
+  { label: "Início", href: "#topo" },
   { label: "Projeto", href: "#atuacao" },
   { label: "Agenda", href: "#agenda" },
   { label: "Sobre", href: "#atuacao" },
