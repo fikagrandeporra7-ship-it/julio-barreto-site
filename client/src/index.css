@@ -218,7 +218,19 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .back-to-top { display: inline-flex; align-items: center; gap: 6px; color: var(--yellow); }
 .back-to-top svg { transform: rotate(180deg); }
 
-@media (min-width: 1024px) { .container { max-width: 1280px; } }
+@media (min-width: 1024px) {
+  .container { max-width: 1280px; }
+  .about-grid { max-width: 1120px; }
+  .about-copy { max-width: 1120px; }
+  .preproject-content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; }
+  .preproject-section { min-width: 0; padding: 26px 28px 30px; border: 1px solid rgba(23,58,69,.10); background: rgba(255,255,255,.42); }
+  .preproject-section:first-child { grid-column: 1 / -1; }
+  .preproject-section + .preproject-section { margin-top: 0; padding-top: 26px; border-top: 1px solid rgba(23,58,69,.10); }
+  .preproject-section h3 { font-size: clamp(24px, 2.2vw, 32px); }
+  .preproject-section-body { gap: 13px; }
+  .preproject-section-body p, .preproject-list { max-width: none; font-size: 13px; line-height: 1.62; }
+  .preproject-section-body h4 { max-width: none; font-size: 17px; }
+}
 @media (max-width: 1023px) {
   .header-inner { padding-inline: 24px; }
   .desktop-nav, .header-cta { display: none; }
@@ -235,8 +247,6 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
   .hero-copy { padding-left: 0; }
   .hero-copy h1 { font-size: clamp(54px, 7vw, 85px); }
   .hero-visual { max-width: 500px; }
-  .about-grid { gap: 60px; }
-  .about-visual-wrap { min-height: 500px; }
   .footer-links { gap: 50px; }
 }
 @media (max-width: 767px) {
