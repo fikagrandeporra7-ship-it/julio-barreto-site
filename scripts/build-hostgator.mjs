@@ -11,9 +11,7 @@ const assetDir = path.join(packageDir, "assets");
 const assets = [
   "julio-logo_54e754fb.webp",
   "numero-406.webp",
-  "julio-hero-brasilia_4d400003.jpg",
-  "julio-parliament_1c7e8352.jpg",
-  "julio-community_9ee5f3bd.jpg",
+  "JulioBarreto_c742e036.webp",
   "julio-mark_b168c756.png",
 ];
 
@@ -24,9 +22,7 @@ if (!fs.existsSync(sourceDir)) {
 const assetAliases = {
   "julio-logo_54e754fb.webp": "julio-logo_54e754fb.webp",
   "numero-406_e5375f9c.webp": "numero-406.webp",
-  "julio-hero-brasilia_4d400003.jpg": "julio-hero-brasilia_4d400003.jpg",
-  "julio-parliament_1c7e8352.jpg": "julio-parliament_1c7e8352.jpg",
-  "julio-community_9ee5f3bd.jpg": "julio-community_9ee5f3bd.jpg",
+  "JulioBarreto_c742e036.webp": "JulioBarreto_c742e036.webp",
   "julio-mark_b168c756.png": "julio-mark_b168c756.png",
 };
 
@@ -88,7 +84,7 @@ fs.writeFileSync(
     `1. Abra o Gerenciador de Arquivos da HostGator e entre em public_html (ou na pasta do domínio).\n` +
     `2. Envie o conteúdo desta pasta, incluindo o arquivo oculto .htaccess.\n` +
     `3. Se o domínio já tiver um index.html antigo, substitua-o pelo deste pacote.\n` +
-    `4. Acesse o domínio e teste a navegação, o menu mobile e os links de contato.\n\n` +
+    `4. Acesse o domínio e teste a navegação e o menu mobile.\n\n` +
     `O pacote é frontend estático: não requer Node.js, banco de dados ou configuração de servidor.\n` +
     `O formulário e os links sociais atuais permanecem como elementos demonstrativos até que os\n` +
     `endereços oficiais do mandato sejam conectados.\n`,

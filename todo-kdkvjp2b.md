@@ -1,7 +1,11 @@
-# Inserção — Pré-Projeto integral
+# Alteração — fotos do Projeto e estilo do hero
 
-- [ ] Ler o arquivo completo e preservar o texto original.
-- [ ] Inserir o conteúdo imediatamente abaixo do título solicitado.
-- [ ] Ajustar apenas a apresentação visual, sem alterar palavras ou informações.
-- [ ] Validar fidelidade, responsividade e build HostGator.
+- [x] Localizar o markup e os estilos das fotos da seção Projeto.
+- [x] Remover as duas fotos do Projeto sem alterar o texto integral.
+- [x] Melhorar moldura, proporção, sombra e tratamento visual da foto do hero.
+- [x] Validar desktop, mobile, TypeScript e build HostGator.
 - [ ] Salvar checkpoint e entregar a nova versão.
+
+## Resultado
+
+A seção Projeto ficou textual, sem as duas fotografias. O hero recebeu moldura clara, contorno interno, sombra em duas camadas e enquadramento responsivo. O texto integral do pré-projeto permaneceu idêntico ao arquivo enviado.
