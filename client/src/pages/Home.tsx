@@ -28,7 +28,7 @@ const communityImage = "/manus-storage/julio-community_9ee5f3bd.jpg";
 const navItems = [
   { label: "Projeto", href: "#atuacao" },
   { label: "Agenda", href: "#agenda" },
-  { label: "Participe", href: "#participe" },
+  { label: "Sobre", href: "#atuacao" },
 ];
 
 const agenda = [
@@ -111,8 +111,8 @@ export default function Home() {
             ))}
           </nav>
 
-          <ScrollLink href="#contato" className="header-cta">
-            Fale com o mandato <ArrowUpRight size={16} strokeWidth={2.2} />
+          <ScrollLink href="#participe" className="header-cta">
+            Participe <ArrowUpRight size={16} strokeWidth={2.2} />
           </ScrollLink>
 
           <button className="mobile-menu-toggle" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
@@ -126,8 +126,8 @@ export default function Home() {
               {item.label} <ArrowUpRight size={16} />
             </ScrollLink>
           ))}
-          <ScrollLink href="#contato" className="mobile-nav-link mobile-nav-cta" onClick={closeMenu}>
-            Fale com o mandato <ArrowUpRight size={16} />
+          <ScrollLink href="#participe" className="mobile-nav-link mobile-nav-cta" onClick={closeMenu}>
+            Participe <ArrowUpRight size={16} />
           </ScrollLink>
         </div>
       </header>

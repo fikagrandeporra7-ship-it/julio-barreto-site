@@ -1,7 +1,8 @@
-# Alteração — remover Trajetória e Resultados
+# Alteração — navegação do cabeçalho
 
-- [ ] Localizar os itens de navegação e as seções “Trajetória” e “Resultados”.
-- [ ] Remover os dois itens da navegação.
-- [ ] Remover as duas seções e limpar dados/imports usados somente por elas.
-- [ ] Validar o layout, TypeScript e build HostGator.
+- [ ] Localizar os itens desktop e mobile do menu.
+- [ ] Remover “Fale com o mandato”.
+- [ ] Adicionar “Sobre” ao menu.
+- [ ] Transformar “Participe” no botão principal na posição removida.
+- [ ] Validar responsividade, TypeScript e build HostGator.
 - [ ] Salvar checkpoint e entregar a versão atualizada.
