@@ -161,7 +161,6 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .agenda-header h2 em { color: var(--yellow); }
 .agenda-intro { max-width: 380px; padding-bottom: 3px; }
 .agenda-intro p { color: rgba(247,242,232,.7); font-size: 14px; line-height: 1.75; }
-.agenda-intro .text-link { margin-top: 24px; }
 .agenda-list { margin-top: 66px; border-top: 1px solid rgba(247,242,232,.24); }
 .agenda-item { position: relative; display: grid; grid-template-columns: 105px 95px minmax(0, 1fr) 35px; gap: 25px; align-items: center; min-height: 142px; border-bottom: 1px solid rgba(247,242,232,.24); transition: background-color 200ms ease, padding 200ms var(--ease-out); }
 .agenda-item:hover { padding-inline: 16px; background: rgba(255,255,255,.04); }
@@ -197,20 +196,6 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 .participate-shape { position: absolute; border: 1px solid rgba(245,197,66,.28); border-radius: 50%; pointer-events: none; }
 .participate-shape-yellow { top: -135px; right: 19%; width: 360px; height: 360px; }
 .participate-shape-green { right: -120px; bottom: -240px; width: 560px; height: 560px; border-color: rgba(255,255,255,.15); }
-
-/* Contact */
-.contact-section { background: var(--paper); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(60px, 12vw, 180px); align-items: center; }
-.contact-grid h2 em { color: var(--coral); }
-.contact-grid > div:first-child > p { max-width: 360px; margin-top: 28px; color: #617278; font-size: 15px; line-height: 1.7; }
-.contact-panel { padding: 9px 0 0; }
-.contact-item { display: flex; align-items: flex-start; gap: 15px; padding: 22px 0; border-bottom: 1px solid var(--line); color: var(--green); }
-.contact-item div { display: flex; flex-direction: column; gap: 6px; }
-.contact-item span { color: #758084; font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
-.contact-item a, .contact-item strong { color: var(--navy); font-family: "DM Sans", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: -.025em; }
-.contact-item a:hover { color: var(--green); }
-.contact-actions { display: flex; align-items: center; gap: 18px; margin-top: 30px; }
-.contact-actions > span { color: #758084; font-size: 10px; font-weight: 700; }
 
 /* Footer */
 .site-footer { background: var(--navy-deep); color: var(--paper); }

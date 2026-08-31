@@ -4,16 +4,13 @@ import {
   ArrowDown,
   ArrowUpRight,
   CalendarDays,
-  ChevronRight,
   Clock3,
   Facebook,
   Instagram,
   Linkedin,
-  Mail,
   MapPin,
   Menu,
   MessageCircle,
-  Users,
   X,
   Youtube,
 } from "lucide-react";
@@ -180,7 +177,7 @@ export default function Home() {
                 <SectionKicker dark>Agenda</SectionKicker>
                 <h2>De onde vem<br /><em>a força do mandato.</em></h2>
               </div>
-              <div className="agenda-intro"><p>O Brasil não cabe em um gabinete. Por isso, a agenda do mandato combina presença no território, escuta de lideranças e trabalho permanente no Congresso.</p><ScrollLink href="#contato" className="text-link text-link-light">Ver agenda completa <ChevronRight size={18} /></ScrollLink></div>
+              <div className="agenda-intro"><p>O Brasil não cabe em um gabinete. Por isso, a agenda do mandato combina presença no território, escuta de lideranças e trabalho permanente no Congresso.</p></div>
             </div>
             <div className="agenda-list">
               {agenda.map((item, index) => (
@@ -201,21 +198,15 @@ export default function Home() {
           <div className="participate-shape participate-shape-green" aria-hidden="true" />
           <div className="container participate-inner">
             <div className="participate-copy"><SectionKicker dark>Participe</SectionKicker><h2>O mandato é público.<br /><em>A conversa também.</em></h2><p>Envie uma sugestão, acompanhe o trabalho e ajude a construir prioridades que façam sentido para a sua cidade.</p></div>
-            <div className="participate-actions"><button className="participate-card participate-card-dark" onClick={() => placeholderAction("Canal do mandato")}><span className="participate-card-icon"><MessageCircle size={22} /></span><span><strong>Canal do mandato</strong><small>Receba atualizações e convites</small></span><ArrowUpRight size={20} /></button><ScrollLink href="#contato" className="participate-card participate-card-light"><span className="participate-card-icon"><Users size={22} /></span><span><strong>Fale com a equipe</strong><small>Envie sua pauta ou sugestão</small></span><ArrowUpRight size={20} /></ScrollLink></div>
+            <div className="participate-actions"><button className="participate-card participate-card-dark" onClick={() => placeholderAction("Canal do mandato")}><span className="participate-card-icon"><MessageCircle size={22} /></span><span><strong>Canal do mandato</strong><small>Receba atualizações e convites</small></span><ArrowUpRight size={20} /></button></div>
           </div>
         </section>
 
-        <section id="contato" className="contact-section section-pad">
-          <div className="container contact-grid">
-            <div><SectionKicker>Contato</SectionKicker><h2>Quer conversar<br /><em>sobre o seu território?</em></h2><p>Este espaço é seu. Conte o que precisa entrar na agenda do mandato.</p></div>
-            <div className="contact-panel"><div className="contact-item"><Mail size={19} /><div><span>Fale com o gabinete</span><a href="mailto:contato@juliobarreto.com.br">contato@juliobarreto.com.br</a></div></div><div className="contact-item"><MapPin size={19} /><div><span>Gabinete em Brasília</span><strong>Câmara dos Deputados — Brasília, DF</strong></div></div><div className="contact-actions"><button className="button button-primary" onClick={() => placeholderAction("Formulário de contato")}>Enviar uma mensagem <ArrowUpRight size={18} /></button><span>Retorno em até 2 dias úteis</span></div></div>
-          </div>
-        </section>
       </main>
 
       <footer className="site-footer">
         <div className="container footer-top"><div className="footer-brand"><img src={logoUrl} alt="Logo Júlio Barreto" /><p>Brasília Além da Divisa</p></div><div className="footer-links"><div><span className="footer-heading">Navegue</span>{navItems.slice(0, 4).map((item) => <ScrollLink key={item.href} href={item.href}>{item.label}</ScrollLink>)}</div><div><span className="footer-heading">Siga o Projeto</span><div className="social-links"><button aria-label="Instagram" onClick={() => placeholderAction("Instagram")}><Instagram size={18} /></button><button aria-label="Facebook" onClick={() => placeholderAction("Facebook")}><Facebook size={18} /></button><button aria-label="YouTube" onClick={() => placeholderAction("YouTube")}><Youtube size={18} /></button><button aria-label="LinkedIn" onClick={() => placeholderAction("LinkedIn")}><Linkedin size={18} /></button></div></div></div></div>
-        <div className="container footer-bottom"><span>© 2026 Júlio Barreto</span><div><a href="#contato">Privacidade</a><a href="#contato">Transparência</a><a href="#topo" className="back-to-top">Voltar ao topo <ArrowDown size={14} /></a></div></div>
+        <div className="container footer-bottom"><span>© 2026 Júlio Barreto</span><div><a href="#topo" className="back-to-top">Voltar ao topo <ArrowDown size={14} /></a></div></div>
       </footer>
     </div>
   );

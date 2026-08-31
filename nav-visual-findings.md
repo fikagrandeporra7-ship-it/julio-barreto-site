@@ -1,3 +1,3 @@
-# Verificação visual — navegação
+# Verificação visual — remoção do contato
 
-No desktop, o cabeçalho exibe Projeto, Agenda e Sobre, seguido do botão Participe na posição anteriormente ocupada por Fale com o mandato. Em mobile, o cabeçalho permanece compacto e o menu continua acessível pelo botão de abertura; a nova ordem foi aplicada ao menu expandido por meio da mesma fonte de navegação.
+A seção de contato foi removida do fluxo da página. Em desktop e celular, Participe segue diretamente para o rodapé, sem faixa vazia ou quebra visual. O rodapé mantém a navegação Projeto, Agenda e Sobre, além do retorno ao topo.
