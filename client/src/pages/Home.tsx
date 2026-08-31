@@ -103,7 +103,7 @@ export default function Home() {
 
           <nav className="desktop-nav" aria-label="Navegação principal">
             {navItems.map((item) => (
-              <ScrollLink key={item.href} href={item.href} className="nav-link">
+              <ScrollLink key={item.label} href={item.href} className="nav-link">
                 {item.label}
               </ScrollLink>
             ))}
@@ -120,7 +120,7 @@ export default function Home() {
 
         <div className={`mobile-nav ${menuOpen ? "mobile-nav-open" : ""}`}>
           {navItems.map((item) => (
-            <ScrollLink key={item.href} href={item.href} className="mobile-nav-link" onClick={closeMenu}>
+            <ScrollLink key={item.label} href={item.href} className="mobile-nav-link" onClick={closeMenu}>
               {item.label} <ArrowUpRight size={16} />
             </ScrollLink>
           ))}
@@ -204,7 +204,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="container footer-top"><div className="footer-brand"><img src={logoUrl} alt="Logo Júlio Barreto" /><p>Brasília Além da Divisa</p></div><div className="footer-links"><div><span className="footer-heading">Navegue</span>{navItems.slice(0, 4).map((item) => <ScrollLink key={item.href} href={item.href}>{item.label}</ScrollLink>)}</div><div><span className="footer-heading">Siga o Projeto</span><div className="social-links"><button aria-label="Instagram" onClick={() => placeholderAction("Instagram")}><Instagram size={18} /></button><button aria-label="Facebook" onClick={() => placeholderAction("Facebook")}><Facebook size={18} /></button><button aria-label="YouTube" onClick={() => placeholderAction("YouTube")}><Youtube size={18} /></button><button aria-label="LinkedIn" onClick={() => placeholderAction("LinkedIn")}><Linkedin size={18} /></button></div></div></div></div>
+        <div className="container footer-top"><div className="footer-brand"><img src={logoUrl} alt="Logo Júlio Barreto" /><p>Brasília Além da Divisa</p></div><div className="footer-links"><div><span className="footer-heading">Navegue</span>{navItems.slice(0, 4).map((item) => <ScrollLink key={item.label} href={item.href}>{item.label}</ScrollLink>)}</div><div><span className="footer-heading">Siga o Projeto</span><div className="social-links"><button aria-label="Instagram" onClick={() => placeholderAction("Instagram")}><Instagram size={18} /></button><button aria-label="Facebook" onClick={() => placeholderAction("Facebook")}><Facebook size={18} /></button><button aria-label="YouTube" onClick={() => placeholderAction("YouTube")}><Youtube size={18} /></button><button aria-label="LinkedIn" onClick={() => placeholderAction("LinkedIn")}><Linkedin size={18} /></button></div></div></div></div>
         <div className="container footer-bottom"><span>© 2026 Júlio Barreto</span><div><a href="#topo" className="back-to-top">Voltar ao topo <ArrowDown size={14} /></a></div></div>
       </footer>
     </div>
