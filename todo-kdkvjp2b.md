@@ -1,7 +1,7 @@
-# Integração — conteúdo da RIDE-DF
+# Alteração — remover Trajetória e Resultados
 
-- [ ] Definir a narrativa e a hierarquia das informações históricas e propositivas.
-- [ ] Inserir o conteúdo na seção Projeto com leitura progressiva.
-- [ ] Ajustar estilos para cards, linha do tempo, municípios e eixos do pacto.
-- [ ] Validar desktop, mobile, TypeScript e build HostGator.
-- [ ] Salvar checkpoint e entregar a nova versão.
+- [ ] Localizar os itens de navegação e as seções “Trajetória” e “Resultados”.
+- [ ] Remover os dois itens da navegação.
+- [ ] Remover as duas seções e limpar dados/imports usados somente por elas.
+- [ ] Validar o layout, TypeScript e build HostGator.
+- [ ] Salvar checkpoint e entregar a versão atualizada.
