@@ -87,7 +87,7 @@ function PreProjectContent() {
 
         return (
           <section className="preproject-section" key={`${sectionIndex}-${title}`}>
-            {title && <h3>{title}</h3>}
+            {title && <h3 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 400 }}>{title}</h3>}
             <div className="preproject-section-body">
               {blocks.map((block, blockIndex) => {
                 const blockLines = block.split("\n");

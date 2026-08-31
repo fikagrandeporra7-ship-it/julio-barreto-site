@@ -1,6 +1,6 @@
-# Revisão — seção Projeto no desktop
+# Correção — tipografia do pré-projeto
 
-- [ ] Revisar a composição atual e preservar a versão mobile.
-- [ ] Compactar o conteúdo desktop em blocos editoriais bem delimitados.
-- [ ] Validar desktop, mobile, fidelidade textual e build HostGator.
-- [ ] Salvar checkpoint e entregar a revisão.
+- [ ] Revisar a propriedade `style` duplicada no JSX.
+- [ ] Consolidar Manrope 400 em uma única propriedade.
+- [ ] Validar renderização, TypeScript e build HostGator.
+- [ ] Salvar checkpoint e entregar a correção.
