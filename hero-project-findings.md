@@ -1,3 +1,3 @@
-# Verificação visual — hero e Projeto
+# Verificação visual — redesign do hero e Projeto
 
-As duas fotos da seção Projeto foram removidas e o conteúdo textual permanece em sequência, sem colunas vazias. O hero agora usa uma moldura clara, contorno interno, sombra em duas camadas, degradê discreto e enquadramento ajustado; a leitura permanece correta em desktop e celular.
+A moldura do hero foi removida: a foto agora aparece com borda limpa, sem contorno interno ou sombra em camadas, mantendo apenas um degradê discreto e sombra suave. O pré-projeto integral foi reorganizado em seções, subtítulos, parágrafos e listas, preservando o texto original e mantendo a leitura em desktop e celular.

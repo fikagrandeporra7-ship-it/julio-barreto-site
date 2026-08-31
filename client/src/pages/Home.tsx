@@ -72,6 +72,61 @@ function ScrollLink({ href, children, className = "", onClick }: { href: string;
   );
 }
 
+function PreProjectContent() {
+  const sections = preProjectText.trim().split(/\n---\n/);
+
+  return (
+    <div className="preproject-content">
+      {sections.map((section, sectionIndex) => {
+        const lines = section.split("\n");
+        const title = lines[0]?.trim();
+        const body = lines.slice(1).join("\n").trim();
+        const blocks = body
+          ? body.split(/\n\s*\n/).map((block) => block.trim()).filter(Boolean)
+          : [];
+
+        return (
+          <section className="preproject-section" key={`${sectionIndex}-${title}`}>
+            {title && <h3>{title}</h3>}
+            <div className="preproject-section-body">
+              {blocks.map((block, blockIndex) => {
+                const blockLines = block.split("\n");
+                const isBulletList = blockLines.every((line) => line.startsWith("- "));
+                const isNumberedHeading = /^\d+\.\s/.test(blockLines[0]);
+
+                if (isBulletList) {
+                  return (
+                    <ul className="preproject-list" key={`${sectionIndex}-list-${blockIndex}`}>
+                      {blockLines.map((line, lineIndex) => (
+                        <li key={`${sectionIndex}-${blockIndex}-${lineIndex}`}>{line.slice(2)}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+
+                if (isNumberedHeading && blockLines.length === 1) {
+                  return <h4 key={`${sectionIndex}-heading-${blockIndex}`}>{blockLines[0]}</h4>;
+                }
+
+                if (isNumberedHeading) {
+                  return (
+                    <div className="preproject-numbered-block" key={`${sectionIndex}-numbered-${blockIndex}`}>
+                      <h4>{blockLines[0]}</h4>
+                      <p>{blockLines.slice(1).join("\\n")}</p>
+                    </div>
+                  );
+                }
+
+                return <p key={`${sectionIndex}-paragraph-${blockIndex}`}>{block}</p>;
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -158,7 +213,7 @@ export default function Home() {
             <div className="about-copy">
               <SectionKicker>Pré-Projeto</SectionKicker>
               <h2 style={{fontSize: '34px'}}>Novo marco com planejamento, gestão e autonomia administrativa</h2>
-              <pre className="preproject-text">{preProjectText}</pre>
+              <PreProjectContent />
               <div className="about-signature"><span className="signature-line" /><span>Júlio Barreto<br /><small>Deputado federal</small></span></div>
             </div>
           </div>
