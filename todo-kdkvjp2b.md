@@ -1,10 +1,7 @@
-# Correção — conteúdo integral da RIDE-DF
+# Integração — conteúdo da RIDE-DF
 
-- [x] Recarregar o arquivo original do usuário.
-- [x] Substituir o resumo pelo conteúdo integral, sem alterar palavras.
-- [x] Validar a fidelidade textual e a apresentação responsiva.
-- [x] Regenerar a build HostGator e salvar checkpoint.
-
-## Resultado
-
-A cópia no projeto foi confirmada byte a byte com o arquivo enviado. O TypeScript, a build HostGator e a renderização em desktop e celular foram aprovados.
+- [ ] Definir a narrativa e a hierarquia das informações históricas e propositivas.
+- [ ] Inserir o conteúdo na seção Projeto com leitura progressiva.
+- [ ] Ajustar estilos para cards, linha do tempo, municípios e eixos do pacto.
+- [ ] Validar desktop, mobile, TypeScript e build HostGator.
+- [ ] Salvar checkpoint e entregar a nova versão.

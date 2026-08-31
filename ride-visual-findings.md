@@ -1,3 +1,3 @@
-# Verificação visual — conteúdo integral da RIDE-DF
+# Verificação visual — narrativa RIDE-DF
 
-A página foi verificada em desktop e celular. O título e todos os blocos do conteúdo original aparecem na seção Projeto, com separação tipográfica para facilitar a leitura sem introduzir texto editorial adicional. A sequência segue naturalmente para Agenda, Participe, Contato e rodapé, sem overflow horizontal visível nas larguras testadas.
+A seção Projeto foi verificada em desktop e celular. A hierarquia aparece na ordem: contexto histórico, linha do tempo, governança e território, municípios em acordeões e os três eixos do Pacto Nacional da Capital. Em celular, os blocos empilham-se verticalmente e os conteúdos permanecem legíveis sem overflow visual.
