@@ -161,8 +161,8 @@ export default function Home() {
               <div className="about-image-small"><img src={communityImage} alt="Júlio Barreto conversando com trabalhadores" /></div>
             </div>
             <div className="about-copy">
-              <SectionKicker>Projeto</SectionKicker>
-              <h2>Um gabinete aberto para quem faz o Brasil acontecer.</h2>
+              <SectionKicker>Pré-Projeto</SectionKicker>
+              <h2 style={{fontSize: '34px'}}>Novo marco com planejamento, gestão e autonomia administrativa</h2>
               <p className="lead-paragraph">Júlio Barreto leva para Brasília a experiência de quem conhece o país de perto. O trabalho começa na escuta, passa pela construção de soluções e termina na prestação de contas.</p>
               <p>Cada pauta precisa responder a uma pergunta simples: como isso melhora a vida de quem trabalha, empreende, cuida da família e espera um serviço público que funcione?</p>
               <div className="about-signature"><span className="signature-line" /><span>Júlio Barreto<br /><small>Deputado federal</small></span></div>

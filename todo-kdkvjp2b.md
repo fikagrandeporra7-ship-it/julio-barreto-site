@@ -1,6 +1,6 @@
-# Alteração — item Início na navbar
+# Verificação — título e marcador do Projeto
 
-- [ ] Confirmar a fonte compartilhada da navegação desktop e mobile.
-- [ ] Adicionar “Início” como primeiro item apontando para o topo.
-- [ ] Validar a ordem visual em desktop e mobile.
-- [ ] Regenerar a build HostGator e salvar checkpoint.
+- [ ] Confirmar “Pré-Projeto” no marcador correto.
+- [ ] Confirmar o novo título e o tamanho aplicado.
+- [ ] Verificar a legibilidade em desktop e celular.
+- [ ] Validar TypeScript/build HostGator e salvar checkpoint.
