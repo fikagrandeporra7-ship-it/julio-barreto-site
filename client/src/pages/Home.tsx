@@ -18,7 +18,7 @@ import { toast } from "sonner";
 
 const logoUrl = "/manus-storage/julio-logo_54e754fb.webp";
 const number406Url = "/manus-storage/numero-406_e5375f9c.webp";
-const heroImage = "/manus-storage/julio-hero-brasilia_4d400003.jpg";
+const heroImage = "/manus-storage/JulioBarreto_c742e036.webp";
 const parliamentImage = "/manus-storage/julio-parliament_1c7e8352.jpg";
 const communityImage = "/manus-storage/julio-community_9ee5f3bd.jpg";
 

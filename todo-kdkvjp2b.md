@@ -1,7 +1,7 @@
-# Alteração — remover contato
+# Alteração — foto do hero
 
-- [ ] Localizar a seção de contato e os links do rodapé que dependem dela.
-- [ ] Remover a seção completa de contato.
-- [ ] Limpar âncoras e estilos sem uso.
-- [ ] Validar layout, TypeScript e build HostGator.
+- [ ] Copiar e publicar a imagem enviada como ativo do site.
+- [ ] Substituir a foto atual do hero.
+- [ ] Ajustar o enquadramento para desktop e celular.
+- [ ] Validar TypeScript, build HostGator e renderização.
 - [ ] Salvar checkpoint e entregar a versão atualizada.
